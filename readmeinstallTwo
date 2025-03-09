@@ -1,0 +1,32 @@
+ vi .env
+ubuntu@ip-172-31-32-138:~/hedera-hardhat-example-project$ npx hardhat test
+You are using a version of Node.js that is not supported by Hardhat, and it may work incorrectly, or not work at all.
+
+Please, make sure you are using a supported version of Node.js.
+
+To learn more about which versions of Node.js are supported go to https://hardhat.org/nodejs-versions
+You have both ethereum-waffle and @nomicfoundation/hardhat-chai-matchers installed. They don't work correctly together, so please make sure you only use one.
+
+We recommend you migrate to @nomicfoundation/hardhat-chai-matchers. Learn how to do it here: https://hardhat.org/migrate-from-waffle
+
+
+  RPC
+The address 0x25866395C6c34a3B38B7F6fAb3DE8d0f0e6d4fe9 has 99914464440000000000 weibars
+    ✔ should be able to get the account balance (661ms)
+Greeter deployed to: 0xb2c0A213230e0c572408e589169098410568571B
+    ✔ should be able to deploy a contract (6119ms)
+Contract call result: initial_msg
+    ✔ should be able to make a contract view call (376ms)
+Updated call result: updated_msg
+Contract call result: updated_msg
+    ✔ should be able to make a contract call (6324ms)
+
+
+  4 passing (14s)
+
+npm notice
+npm notice New major version of npm available! 10.9.2 -> 11.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.2.0
+npm notice To update run: npm install -g npm@11.2.0
+npm notice
+ubuntu@ip-172-31-32-138:~/hedera-hardhat-example-project$
