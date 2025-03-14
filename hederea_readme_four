@@ -30,3 +30,19 @@ Promise {
 > await greeter.greet()
 'xxxx'
 >
+
+
+
+
+Type ".help" for more information.
+> const wallet = (await ethers.getSigners())[0]
+
+
+> const balance = (await wallet.getBalance()).toString()
+undefined
+> balance
+'199627474730000000000'
+
+
+
+
