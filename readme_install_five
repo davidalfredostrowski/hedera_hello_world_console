@@ -77,7 +77,8 @@ Promise {
 
 Type ".help" for more information.
 > const wallet = (await ethers.getSigners())[0]
-
+> wallet.address
+<engter in faucet to receive more test hbar> 
 
 > const balance = (await wallet.getBalance()).toString()
 undefined
