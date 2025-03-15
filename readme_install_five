@@ -31,13 +31,13 @@ ls
 cd hedera-hardhat-example-project/
 ls
 vi hardhat.config.js
-vi .env
+< edit out the 'local'  > 
+
 npm install
-vi .env
-vi .env.example
+
 cp .env.example .env
-
-
+vi .env
+<add the priveate key from your developer resource>
 
 source .env
 
