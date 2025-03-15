@@ -39,7 +39,50 @@ follow steps from powerpoint / video
 
 
 
+source .env
 
+npx hardhat console --network testnet
+
+
+
+
+
+
+Welcome to Node.js v22.14.0.
+Type ".help" for more information.
+> const MyContract = await ethers.getContractFactory("Greeter")
+undefined
+> const greeter = await MyContract.deploy("inital_msg")
+undefined
+> greeter.address
+'0x6df5803327Fb00258E817a2C3259CaF1Ef203354'
+> greeter.setGreeting("xxxx")
+Promise {
+  <pending>,
+  [Symbol(async_id_symbol)]: 1355,
+  [Symbol(trigger_async_id_symbol)]: 14
+}
+> greeter.greet()
+Promise {
+  <pending>,
+  [Symbol(async_id_symbol)]: 2391,
+  [Symbol(trigger_async_id_symbol)]: 14
+}
+> await greeter.greet()
+'xxxx'
+>
+
+
+
+
+Type ".help" for more information.
+> const wallet = (await ethers.getSigners())[0]
+
+
+> const balance = (await wallet.getBalance()).toString()
+undefined
+> balance
+'199627474730000000000'
 
 
 
